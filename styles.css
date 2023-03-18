@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/netflix-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 10px 8%;
+    position: relative;
+
+}
+
+.logo-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.logo-signin button {
+    border: none;
+    outline: 0;
+    font-size: 12px;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+
+}
+
+.header-content {
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+
+
+.header-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    max-width: 650px;
+    margin-bottom: 1rem;
+
+}
+
+.header-content h3 {
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.header-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* FORM */
+
+.email-sgnup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    
+
+}
+
+
+
+.email-signup input {
+    width: 50%;
+    border: 1px solid grey;
+    height: 3rem;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+
+.email-signup button {
+    width: 30%;
+    height: 3rem;
+    border: none;
+    background-color:#db0001;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+
+
+.email-signup button:hover {
+   background-color: rgba(255, 0, 0, 0.685);
+}
+
+
+
+/* features */
+
+
+feature {
+    padding: 50px 12%; 
+    font-size: 22px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    border-top: 8px solid #333;
+
+}
+
+.text-column {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+
+.text-column h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+
+.text-column p {
+ font-weight: 500;
+ font-size: 1.8rem;
+}
+
+.img-column {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-column .img-1 {
+    display: block;
+    width: 90%;
+}
+
+
+/* FAQ */
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 8px solid #333;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    
+}
+
+
+.accordion {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion li label::after {
+    content: '+';
+    font-size: 2.5rem;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion li .content {
+    background-color: #303030;
+    text-align: left;
+    max-height: 0;
+    padding: 0px 12px;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+
+.accordion input[type="radio"]:checked + label::after {
+transform: rotate(135deg);
+}
+
+.faq small {
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+
+.faq form {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-top: 20px;
+
+}
+
+
+
+
+    .faq form .email-address {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .faq form button {
+        width: 20%;
+    }
+
+    .faq form button:hover {
+        background-color: rgba(255, 0, 0, 0.685);
+    }
+
+
+
+/* footer */
+
+.footer {
+    padding: 50px 15% 50px;
+    border-top: 8px solid #333;
+    color: #777
+
+}
+
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .foot {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+
+
+
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+
+}
+
+
+.footer button {
+    border: none;
+    outline: 0;
+    font-size: 12px;
+    background-color: ;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+}
+
+.footer select {
+    background-color: #000;
+    color:#fff;
+    border: 1px solid gray;
+    width: 10%;
+    padding-left: 10px;
+    height: 2rem;
+    border-radius: 4px;
+}
+
+.footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 1.7rem;
+}
+
+
+/* media queries */
+
+@media(max-width: 600px) {
+    .logo-signin .logo{
+        padding-right: 60px;
+    }
+
+
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .header-content button {
+        font-size: 16px;
+    }
+
+
+    .text-column, .img-column {
+        flex-basis: 100%;
+    } 
+
+    .text-column h2 {
+        font-size: 2rem;
+
+    }
+
+
+    .text-column p {
+        font-size: 1.2rem;
+
+    }
+
+
+    .faq label{
+        width: 100%;
+    }
+
+
+
+    .row:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .row:nth-child(4) {
+        display: row;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .faq {
+        margin-bottom: 40px;
+    }
+
+
+
+    .faq h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+
+    .accordion .content {
+        font-size: 14px;
+    }
+
+
+
+    .accordion li label {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+
+    .accordion li label::after {
+        font-size: 26px;
+    }
+
+
+
+    .faq small {
+        font-size: 1rem;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+
+
+    .faq form {
+        height: 60px;
+        flex-direction: column;
+    }
+
+
+    .faq .email-signup .email-address {
+        width: 80%;
+        height: 70%;
+    }
+
+
+    .faq .email-signup button {
+    width: 40%;
+    height: 2rem;
+    border: none;
+    background-color:#db0001;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 20px;
+        
+        
+    }
+
+
+    .footer select {
+        width: 40%
+    }
+
+
+}
